@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="portfolio.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="menu">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="index.html#me" >About</a></li>
+            <li><a href="index.html#skills" >My Skills</a></li>
+            <li><a href="index.html#m" >More</a></li>
+        </ul>
+        <div class="menu-wrapper">
+            <span class="ham"></span>
+            <span class="ham"></span>
+            <span class="ham"></span>
+        </div>
+    </nav>
+    <br>
+      <h1 id="demo"></h1>
+
+    <br>
+    <div class="abtme" id="me">
+        <h1 >
+            About Me 
+              </h1> 
+              <img src="a.jpg" alt="clickable image"  style="cursor: pointer;" id="a" >
+              <p>
+                This is my Portfolio, I am a Bachelors of Information Technology Student, studying at the University of Southern Queensland. The University of Southern Queensland is among the top 150 ranking universities of Australia, it also is a public university.The Bachelor Of Information Technology program here is accredited at professional level by the  Australian Computer Society (ACS) and, through the Seoul Accord, is recognised in other countries. The Seoul Accord is a multi-lateral agreement that allows ACS accreditation to be recognised globally. I am majoring in software development and data-science. For more Information about me you can click the button below to download my resume. <br> <em>Hope you have a great Day Ahead :)</em> <br> <br>
+                <button src="cv.pdf" onclick="downloadPDF()">Resume</button>
+
+              </p><br>
+     </div>
+
+     <div class="myskills" >
+        <h1 id="skills">Accquired Skills</h1>
+        <p>Through my Journey in the University I have gained skills in Python, Html:5, CSs, Java Script, Use of SQL-Nosql for data redundancy.  Among which here i represet my knowledge of web development using Html:5, CSS, and Java Script.</p><br>
+        <table border="1" width="100%">
+            
+                <tr><th>Use of Pythone for Data-Analysis</th></tr>
+                <tr><th>Knowledge Of HTML 5 For Web Development</th></tr>
+                <tr><th>Knowledge Of CSS For Styling</th></tr>
+                <tr><th>And Knowledge Of Javascript</th></tr>
+                <tr><th rowspan="2">Use SQL And NoSQL for Data Management <br>
+                    I.E.(MongoDB, MY SQL)
+                </th> </tr>
+            
+    </table>
+
+     </div>
+
+     <div class="more" id="m">
+        <h1>More</h1>
+          <p>This is related to the jobs i have previously done and am doing to uplift my communication, leadership skills. I am currently working as an International Student Ambassador at UniSQ, proficient in student management and academic activities, have skills and expertise to help with IT related problems. I have also worked in woolworth and also am doing a care sector job as a carer to support my education. </p>
+
+     </div>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+     <footer>
+        <img src="uni logo.png" alt="clickable image1" class="icon" onclick="Burflink()" style="cursor: pointer;">
+
+        <img src="woolworths logo.png" alt="clickable image2" class="icon2"  style="cursor: pointer;" onclick="Loadlink1()">
+        
+      
+
+        <img src="fb.jpg" alt="clickable" style="cursor: pointer;" class="icon4" onclick="Burflink2()">
+        <img src="insta.png" alt="clickable" style="cursor: pointer;" class="icon5" onclick="Burflink3()">
+        <img src="LinkedIn.webp" alt="clickable" style="cursor: pointer;" class="icon6" onclick="Burflink4()">
+     </footer>
+</body>
+</html>
