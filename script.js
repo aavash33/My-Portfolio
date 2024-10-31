@@ -2,7 +2,7 @@
 /// creating hamburger
 const d = document.querySelector(".bt1");
 d.addEventListener("click", () => {
-  const f = document.querySelector(".form");
+  const f = document.querySelector("#feedbackForm");
   if (f.style.display === "none") {
     f.style.display = "block"; 
   } else {
