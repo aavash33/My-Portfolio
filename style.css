@@ -146,13 +146,28 @@ th:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 .form{
-    margin-left:45% ;
+    margin-left:30% ;
     margin-right: 30%;
 }
 #feedbackForm{
-    margin-left:45% ;
+    margin-left:35% ;
     margin-right: 30%;
     display: none;
+}
+
+#su{
+    background-color: black;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+
+#su:hover{
+   
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 footer{
