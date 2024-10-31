@@ -4,9 +4,9 @@ const d = document.querySelector(".bt1");
 d.addEventListener("click", () => {
   const f = document.querySelector(".form");
   if (f.style.display === "none") {
-    f.style.display = "block"; // Corrected to assignment operator
+    f.style.display = "block"; 
   } else {
-    f.style.display = "block";
+    f.style.display = "none";
   }
 });
 //preventing reload due to form 
