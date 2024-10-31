@@ -34,7 +34,7 @@
               <img src="a.jpg" alt="clickable image"  style="cursor: pointer;" id="a" >
               <p>
                 This is my Portfolio, I am a Bachelors of Information Technology Student, studying at the University of Southern Queensland. The University of Southern Queensland is among the top 150 ranking universities of Australia, it also is a public university.The Bachelor Of Information Technology program here is accredited at professional level by the  Australian Computer Society (ACS) and, through the Seoul Accord, is recognised in other countries. The Seoul Accord is a multi-lateral agreement that allows ACS accreditation to be recognised globally. I am majoring in software development and data-science. For more Information about me you can click the button below to download my resume. <br> <em>Hope you have a great Day Ahead :)</em> <br> <br>
-                <button src="cv.pdf" onclick="downloadPDF()">Resume</button>
+                <button src="cv.pdf" onclick="downloadPDF()" class="bt">Resume</button>
 
               </p><br>
      </div>
@@ -58,9 +58,30 @@
 
      <div class="more" id="m">
         <h1>More</h1>
-          <p>This is related to the jobs i have previously done and am doing to uplift my communication, leadership skills. I am currently working as an International Student Ambassador at UniSQ, proficient in student management and academic activities, have skills and expertise to help with IT related problems. I have also worked in woolworth and also am doing a care sector job as a carer to support my education. </p>
-
+          <p>This is related to the jobs i have previously done and am doing to uplift my communication, leadership skills. I am currently working as an International Student Ambassador at UniSQ, proficient in student management and academic activities, have skills and expertise to help with IT related problems. I have also worked in woolworth and also am doing a care sector job as a carer to support my education. </p><br>
+          <button class="bt1">Contact me </button>
      </div>
+     <!--FORM-->
+
+     <div class="form">
+
+      <form id="feedbackForm">
+        <label for="Fname">
+          <input type="text" name="f" placeholder="enter your Fullname" id="Fname">
+        </label><br>
+        <label for="ema">
+          <input type="email" placeholder="enter you email address">
+        </label><br>
+        <label for="feed">
+          <textarea name="f" id="feed" cols="30" rows="10" placeholder="Enter Your Message Here."></textarea>
+        </label>
+        <label for="sub">
+          <input type="submit" value="submit" id="su">
+        </label>
+        <pre id="msg"></pre>
+      </form>
+     </div>
+
    <br>
    <br>
    <br>
