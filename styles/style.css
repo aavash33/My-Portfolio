@@ -274,20 +274,19 @@ footer img{
 
 @media (max-width: 500px) {
 
+    .first-row-container {
+
+        flex-direction: column;
+    }
    
     .abtme{
-        border-radius: 5%;
-
-        margin-top: 6%;
-        margin-left: 2%;
-        margin-right: 2%;
+        width: 100%;
+      
     }
     .myskills{
-        border-radius: 5%;
-
-        margin-top: 25%;
-        margin-left: 2%;
-        margin-right: 2%;
+    
+ width: 100%;
+       
     }
 
     .more{
