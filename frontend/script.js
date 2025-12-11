@@ -39,24 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-// setInterval
-setTimeout(() => {
-  let today=new Date()
-  let h=today.getHours()
-  let m=today.getMinutes()
-  let s=today.getSeconds()
-  document.getElementById("demo").innerHTML=(`${h}:${m}:${s}`)
-  if(h>=0 && h<12){
-  document.getElementById("demo").innerHTML="Hello! Welcome To My Portfolio Have A Good Morning:) "
-  }
-  else if(h>=12 && h<18){
-      document.getElementById("demo").innerHTML="Hello! Welcome To My Portfolio Have A Good Afternoon:)"
-  }
-  else{
-      document.getElementById("demo").innerHTML="Hello! Welcome To My Portfolio Have A Good Night:)"
-  }
-  }, 3000);
-  
 
 
 
