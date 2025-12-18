@@ -173,9 +173,24 @@ th:hover{
     color: skyblue;
 }
 
+/* LOCALTEAM AUSTRALIA STYLING */
+
+.intern_LocalTeam li{
+    background-color: transparent;
+    cursor: auto;
+}
 
 
-/*More about me */
+/* SECOND ROW CONTAINER STYLE */
+.second-row-container{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+/*MORE DIV STYLING */
 .more{
     color: black;
     text-align: center;
@@ -188,6 +203,19 @@ th:hover{
 .more:hover{
     color: rgba(0, 0, 0, 0.489);
 }
+.more_capstone_project {
+      list-style-type: disc ;
+    padding-left: 20px;
+    margin: 0;
+    display: block ;
+}
+.more_capstone_project li {
+    background-color: transparent;
+    display: block ;
+    cursor: auto;
+}
+
+
 .bt1{
     background-color: black;
     color: white;
@@ -201,6 +229,58 @@ th:hover{
    
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
+/* PROJECT DIVS STYLING */
+/* PROJECT1-3*/
+.Project1_block,
+.Project2_block,
+.Project3_block,
+.Project4_block{
+background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+   padding: 40px;
+   width: 80%;
+   display: flex;
+   gap: 1em;
+}
+.project1_fig{
+    max-width: 200px;
+max-height: 200px;
+}
+
+.project1_text a,
+.project2_text a,
+.project3_text a,
+.project4_text a{
+     color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    
+}
+
+/*  PROJECT 2 FIGURE STYLE*/
+.project2_fig{
+    max-width: 250px;
+max-height: 200px;
+}
+
+
+/* PROJECT 3 & 4 FIGURE STYLE*/
+.project3_fig,
+.project4_fig{
+    max-width: 250px;
+max-height: 250px;
+}
+
+/* CONTACT BUTTON STYLE */
+.contact{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+/* FORM STYLING */
 .form{
     margin-left:30% ;
     margin-right: 30%;
@@ -272,7 +352,7 @@ footer img{
 
 
 
-@media (max-width: 500px) {
+@media (max-width: 580px) {
 
     .first-row-container {
 
@@ -348,4 +428,23 @@ footer img{
         text-align: left;
         text-overflow: hidden;
     }
+
+
+
+    /* PROJECT1 DIV */
+    .Project1_block,
+    .Project2_block,
+    .Project3_block,
+    .Project4_block{
+   display: flex;
+   flex-direction: column;
+}
+}
+
+@media (max-width:424px){
+    .project3_fig,
+.project4_fig{
+    max-width: 200px;
+max-height: 200px;
+}
 }
