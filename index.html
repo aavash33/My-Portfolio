@@ -3,97 +3,235 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./imgs/portfolio.png" type="image/x-icon">
-    <link rel="stylesheet" href="./styles/style.css">
-    <title>Aavash</title>
-    
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
+     <link rel="shortcut icon" href="./portfolio.png" type="image/x-icon">
 </head>
-
 <body>
-    <nav class="navbar">
-        <ul class="menu">
-            <li><a href="index.html" >Home</a></li>
-            <li><a href="index.html#me" >About</a></li>
-            <li><a href="index.html#skills" >My Skills</a></li>
-            <li><a href="index.html#m" >More</a></li>
+    <header class="main_header">
+    
+        <div class="off-screen-menus">
+<ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="services.html">Skills</a></li>
+            <li><a href="contact.html">More</a></li>
         </ul>
-        <div class="menu-wrapper">
-            <span class="ham"></span>
-            <span class="ham"></span>
-            <span class="ham"></span>
         </div>
-    </nav>
 
+         <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    
+            <nav class="main_nav">
 
-    <!-- <br>
-      <h1 id="demo"></h1>
-
-    <br> -->
-    <!-- MAIN DIV -->
-    <div class="main_div">
-
-
-     <!-- First row container -->
-
-
-       <div class="first-row-container">
-
-         <!-- ABOUT ME DIV -->
-    <div class="abtme" id="me">
-        <h1 class="abt_me_header">
-            About Me 
-              </h1> <br><br><br>
-
-              <!-- MY IMAGE -->
-             <div class="abtme_img"> <img src="./imgs/a.jpg" alt="user_photo"  style="cursor: pointer;" id="a" > </div>
-             <!-- END OF MY ABOUT ME IMAGE FILE DIV -->
-
-              <!-- ABOUT ME PARAGRAPH DIV -->
-              <div>
-              <p class="abt_me_para">
-                I am Aavash Pudasaini, a Bachelor of Information Technology graduate with a major in Software Application Development from the University of Southern Queensland, a public university ranked among the top 150 universities in Australia. The Bachelor of Information Technology program is professionally accredited by the Australian Computer Society (ACS) and, through the Seoul Accord, is internationally recognised. <br><br>
-
-I am a motivated, diligent, and proactive individual with a strong positive attitude that underpins my approach to academic pursuits, professional work, and everyday life. I possess excellent interpersonal and communication skills, enabling me to build strong rapport with individuals from diverse cultural and professional backgrounds. I am equally comfortable working independently or collaboratively and thrive in highly technical, team-based environments. <br><br>For more Information about me you can click the button below to download my resume. <br>  <br> <br>
-                <button src="cv.pdf" onclick="downloadPDF()" class="bt">Resume</button>
-
-              </p><br>
-              </div>
-     </div>
-
-     <div class="myskills" >
-        <h1 id="skills">Accquired Skills & Internship</h1>
-        <p>Through my Journey in the University I have gained skills in Python, Html:5, CSS, Java Script, Use of SQL-Nosql for data redundancy.  Amongst which i represet this web-page as my knowledge of web development using Html:5, CSS, and JavaScript.</p><br>
-        <table border="1" width="100%">
-            
-                <tr><th>Python </th></tr>
-                <tr><th> HTML 5</th></tr>
-                <tr><th>Vanila CSS </th></tr>
-                <tr><th>Javascript</th></tr>
-                <tr><th>Node.js</th></tr>
-                <tr><th >SQL, SQL Lite, PostgreSQL & MySQL
-                </th> </tr>
-                <tr><th>PHP</th></tr>
-
+                <ul class="nav_links">
                 
-            
-    </table>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="services.html">Skills</a></li>
+            <li><a href="contact.html">More</a></li>
+        </ul>
+
+       
+</nav>
 
 
-     </div>
+<div class="header1"><h1>Aavash Pudasaini</h1>
 
-    <!-- END OF DIV MY-SKILLS -->
+<h2>Full-Stack Developer & DSA(OOPS)</h2>
 
-     </div>
+<h4>I design clean, usable digital experiences.</h4>
 
-<!-- END OF FIRST ROW CONTAINER DIV -->
+</div>
+
+<!-- HEADER BUTTON DIVS -->
+
+<div class="header_buttons">
+
+  <div class="view_project">  <button class="btn_view_project">View Projects</button></div>
 
 
-<!-- SECOND ROW CONTAINER DIV -->
-<div class="second-row-container">
+   <div class="contact_me"> <button class="btn_contact_me">Contact Me</button></div>
 
-  <!-- MORE DIV START -->
-     <div class="more" id="m">
-        <h1 class="more_header">More</h1>
+</div>
+
+</header>
+      <!-- END OF HEADER -->
+
+           <div class="my_projects_heading">
+
+
+        <h3>My Projects</h3>
+
+    </div>              
+
+
+<main class="main_content">
+
+
+<div class="my_projects">
+
+
+    <div class="project1">
+        <div class="project1_fig"><img src="project1_fig.png" alt="project1 figure" class="project1_fig" loading="lazy"></div> <br><br>
+
+        <p class="project1_caption">A responsive webpage developed using HTML, CSS, and JavaScript, with a backend powered by PHP and MySQL. The source code is available in the <a href="https://github.com/aavash33/Demo_Photo_card">GitHub repository</a>, and the live site is available <a href="https://aavash33.github.io/Demo_Photo_card/">here</a>.</p>
+    </div> &nbsp; &nbsp; &nbsp;
+
+    <div class="project2">
+
+        <div class="project2_fig">
+
+            <img src="project2_img.jpg" alt="Project2 Image" class="project2_fig" loading="lazy">
+
+        </div> <br>
+
+        <!-- PROJECT 2 CAPTION -->
+
+<p class="project2_caption">
+
+A web tool that helps decode ciphertext when provided the encryption key. <br> <br>
+
+🛠️ With this tool, you can: <br> <br>
+
+Decode Single Transposition Ciphers by entering your ciphertext and key. <br><br>
+
+<a href="https://68abffb4e9665cf07e2ffaae--wonderful-stroopwafel-b0fc1f.netlify.app/">🌐Live Site</a>
+
+<a href="https://github.com/aavash33/aavash33-Single_Transposition_CipherText_Decoder">📂Source Code:</a>
+
+</p>
+
+    </div>&nbsp; &nbsp; &nbsp;
+  <!-- END OF PROJECT 2 DIV -->
+    <div class="project3">
+
+
+        <div class="project3_fig">
+            <img src="project3_fig.png" class="project3_fig" alt="Project 3 figure" loading="lazy">
+
+           
+        </div>
+<br><br>
+
+         <p class="project3_caption">
+                A basic site created as a practice and tries to replicates the <a href="https://www.pulsestart.com.au/">Pulse Start</a> site. <br><br><br>
+                <a href="https://aavash33.github.io/ICT-Training/">🌐Live Site</a>
+                <a href="https://github.com/aavash33/ICT-Training">📂Source Code:</a>
+            </p>
+
+
+    </div>
+
+
+</div>
+<br><br>
+
+<!-- END OF MY PROJECT DIV -->
+
+
+<div class="about_me" id="about">
+
+<br><br>
+    <div class="my_img">
+
+        <img src="my_img.jpg" alt="my image" class="my_img">
+
+    </div> <br> <br>
+
+
+    <div class="abt_me_cmnt">
+
+<h3>
+    About Me, 
+</h3> <br><br>
+
+<p>
+    I am Aavash Pudasaini, a Bachelor of Information Technology graduate with a major in Software Application Development from the University of Southern Queensland, a public university ranked among the top 150 universities in Australia. The Bachelor of Information Technology program is professionally accredited by the Australian Computer Society (ACS) and, through the Seoul Accord, is internationally recognised.
+
+I am a motivated, diligent, and proactive individual with a strong positive attitude that underpins my approach to academic pursuits, professional work, and everyday life. I possess excellent interpersonal and communication skills, enabling me to build strong rapport with individuals from diverse cultural and professional backgrounds. I am equally comfortable working independently or collaboratively and thrive in highly technical, team-based environments.
+
+</p>
+        
+    </div>
+    
+<br><br>
+</div><br><br>
+
+<!-- END OF ABOUT ME DIV  -->
+
+<div class="skills">
+
+    <div class="skills_cmnt">
+
+        <h3>Skills</h3><br><br>
+
+        <p>
+PROGRAMMING: HTML5, CSS, JS, PHP, Node.js, C, C++, Python & R 
+</p>
+
+
+<p>DATABASES: MySQL, PostgreSQL 
+</p>
+
+<p>SOFTWARE: MS Word, MS Excel, MS Outlook, MS Teams, GitHub, Cisco Packet Tracer, Wireshark & Google
+Forms </p>
+
+    </div>
+
+    <br><br>
+
+    <div class="skill_icons">
+
+
+<div class="skill_icons1"> 
+    <div class="nodejs_icon">
+    <img src="nodejs_icon.svg" alt="Node Js" class="nodejs_icon">
+</div>
+
+<div class="html_css_js">
+
+<img src="html_css_js_icon.png" alt="HTML5 CSS JS" class="html_css_js">
+
+</div>
+</div>
+
+
+<div class="skill_icons2">
+
+
+    <div class="php_icon">
+
+    <img src="php_icon.png" alt="php_icon" class="php_icon">
+
+</div>
+
+<div class="cpp_icon">
+
+    <img src="c++_icon.png" alt="CPP Icon" class="cpp_icon"> 
+
+</div>
+
+</div>
+
+    </div>
+
+    
+    
+
+</div>
+
+<!-- END OF SKILLS DIV -->
+
+
+   
+<!-- START OF MORE DIV-->
+
+     <div class="more" id="more">
+        <h3 class="more_header">More</h1>
         
 <!-- MORE CAPSTONE PROJECT & MORE CAPSTONE PROJECT DIV START -->
         <div class="more_capstone_project_and_more_capstone_project_div">
@@ -102,8 +240,8 @@ I am a motivated, diligent, and proactive individual with a strong positive atti
 
           <!-- CAPSTONE PROJECT FIGURE -->
 <figure class="cap_project_figs">
-  <img src="./imgs/capstone_project_logo.png" alt="Uni_capstone_logo">
-  <img src="./imgs/FutureAccess_capstone_project.jpg" alt="Future_access_logo" class="Future_access_logo">
+  <img src="./capstone_project_logo.png" alt="Uni_capstone_logo">
+  <img src="./FutureAccess_capstone_project.jpg" alt="Future_access_logo" class="Future_access_logo">
 </figure>
 
 
@@ -124,7 +262,7 @@ I am a motivated, diligent, and proactive individual with a strong positive atti
 <!-- INTERN LOCAL TEAM DIV START -->
 <div class="intern_LocalTeam_div">
   <figure class="LocalTeam_Australia_Figure">
-<img src="./imgs/LocalTeam-Logo.webp" alt="LocalTeam_logo" >
+<img src="./LocalTeam-Logo.webp" alt="LocalTeam_logo" >
   </figure>
          <p>
   <b>LOCALTEAM AUSTRALIA, Toowoomba Nov 2024 – July 2025 ICT Intern (Volunteer) </b>
@@ -148,124 +286,28 @@ environment</li>
 
      <!-- END OF DIV MORE -->
 
-<!-- START OF PROJECTS DIVS -->
- <!-- PROJECT 1 -->
-     <div class="Project1_block">
-<figure class="project1_fig">
-<img src="./imgs/project1_fig.png" alt="photocard_image" class="project1_fig">
-</figure>
-<div class="project1_text">
- <p> A responsive webpage developed using HTML, CSS, and JavaScript, with a backend powered by PHP and MySQL. The source code is available in the <a href="https://github.com/aavash33/Demo_Photo_card">GitHub repository</a>, and the live site is available <a href="https://aavash33.github.io/Demo_Photo_card/">here</a>.</p>
-</div>
-
-     </div>
-<!-- PROJECT 1 DIV ENDS -->
-
-<!-- PROJECT 2 DIV START -->
-     <div class="Project2_block">
-<figure class="project2_fig">
-<img src="./imgs/project2_img.jpg" alt="ciphertext_image" class="project2_fig">
-</figure>
-<div class="project2_text">
- <p>A web tool that helps decode ciphertext when provided the encryption key. <br><br>
-  🛠️ With this tool, you can: <br><br>
-  Decode Single Transposition Ciphers by entering your ciphertext and key. <br><br>
-
-  🌐<a href="https://68abffb4e9665cf07e2ffaae--wonderful-stroopwafel-b0fc1f.netlify.app/">Live Site</a>
-
-  📂<a href="https://github.com/aavash33/aavash33-Single_Transposition_CipherText_Decoder">Source Code:</a>
- </p>
-</div>
-</div>
-
-<!-- PROJECT 2 DIV ENDS -->
-
-<!-- PROJECT 3 DIV STARTS -->
- <div class="Project3_block">
-<figure class="project3_fig">
-<img src="./imgs/project3_fig.png" alt="iCT_TRAINIGN IMAGE" class="project3_fig">
-</figure> 
-
-<div class="project3_text">
- <p>A basic site created as a practice and tries to replicates the <a href="https://www.pulsestart.com.au/">Pulse Start</a> site. <br><br>
-
-🌐<a href="https://aavash33.github.io/ICT-Training/">Live Site</a><br><br>
-
- 📂<a href="https://github.com/aavash33/ICT-Training">Source Code:</a>
-</p>
-</div>
-
-     </div>
-<!-- PROJECT 3 DIV ENDS -->
-
-<!-- PROJECT 4 DIV STARTS -->
-  <div class="Project4_block">
-<figure class="project4_fig">
-<img src="./imgs/project4_fig.png" alt="TIC_TAC_TOE" class="project4_fig">
-</figure>
-<div class="project4_text">
- <p> Tic tac toe game made using HTML%, Vanila CSS, and JavaScript(JS). <br><br>
-
-🌐<a href="https://aavash33.github.io/Tic-Tac-Toe/">Live Site</a><br><br>
-
-📂<a href="https://github.com/aavash33/Tic-Tac-Toe">Source Code:</a>
- </p>
-</div>
-
-     </div>
-  
-
-  
-<!-- CONTACT ME BUTTON -->
-  <div class="contact">
-    <button class="bt1">Contact me </button>
-  </div>
-<!-- END OF CONTACT DIV -->
-     <!--FORM-->
-
-     <div class="form">
-
-      <form id="feedbackForm">
-        <label for="Fname">
-          <input type="text" name="f" placeholder="enter your Fullname" id="Fname">
-        </label><br>
-        <label for="ema">
-          <input type="email" placeholder="enter you email address">
-        </label><br>
-        <label for="feed">
-          <textarea name="f" id="feed" cols="30" rows="10" placeholder="Enter Your Message Here."></textarea>
-        </label>
-        <label for="sub">
-          <input type="submit" value="submit" id="su">
-        </label>
-        <p id="msg"></p>
-      </form>
-     </div>
-   <!-- END OF Form DIV -->
 
 
-</div>
-<!-- END OF SECOND ROW CONTAINER -->
-
-     </div>
-   <!-- END OF MAIN DIV -->
+</main>
 
 
- 
-   <br>
-   <br>
-     <footer>
-        <img src="./imgs/uni logo.png" alt="clickable image1" class="icon" onclick="Burflink()" style="cursor: pointer;">
+<footer class="footer">
 
-        <img src="./imgs/woolworths logo.png" alt="clickable image2" class="icon2"  style="cursor: pointer;" onclick="Loadlink1()">
+ <h3 >Let's Work Together</h3>
+    <p>Connect with me below.</p>
+
+
+    <figure class="icon">
+        <a href="https://www.linkedin.com/in/aavash-pudasaini/" class="linkedin_icon"><img src="./linkedin_icon.png" alt="linkedin_icon" class="linkedin_icon"></a>
+
         
-      
+        <a href="https://github.com/aavash33"><img src="./github_icon.png" alt="github_icon" class="github_icon"></a>
 
-        <img src="./imgs/fb.jpg" alt="clickable" style="cursor: pointer;" class="icon4" onclick="Burflink2()">
-        <img src="./imgs/insta.png" alt="clickable" style="cursor: pointer;" class="icon5" onclick="Burflink3()">
-        <img src="./imgs/LinkedIn.webp" alt="clickable" style="cursor: pointer;" class="icon6" onclick="Burflink4()">
-     </footer>
+        <a href="https://www.facebook.com/"><img src="./facebook.png" alt="facebook_icon" class="facebook_icon"></a>
+    </figure>
+
+</footer>
+
+<script src="index.js"></script>
 </body>
-<script src="./frontend/script.js" defer></script>
-
 </html>
