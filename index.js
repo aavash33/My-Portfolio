@@ -28,6 +28,10 @@ hamMenu.addEventListener('click', ()=>{
     }
 });
 
+
+
+//Displaying contact form on click of contact me button
+
 const contactBtn = document.querySelector('.btn_contact_me');
 
 contactBtn.addEventListener('click', ()=>{
