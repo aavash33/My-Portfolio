@@ -340,7 +340,8 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05), 0 -2px 4px rgba(0, 0, 0, 0.05);
    display: flex;
    justify-content: center;
    background-color: #ffffff;
-   overflow: auto;
+   overflow: clip;
+     transition: 0.6s;
     border-radius: 10%;
     align-items: center;
 }
@@ -503,7 +504,6 @@ width: 50%;
 /*MORE DIV STYLING */
 .more{
     margin: 1%;
-    margin-top: 40px;
     color: black;
     text-align: center;
     background-color: white;
@@ -512,7 +512,8 @@ width: 50%;
     border: 2px solid #ffffff;
     align-items: center;
     padding: 10px;
-    
+    margin-top: 40px;
+
    
 }
 
@@ -732,14 +733,31 @@ flex-direction: column;
 
 
 /* STYLING MORE DIV */
-/* 
-  .more{
+  .more,
+  .skills,
+  .about_me
+
+  {
     
 margin: 2%;
-        margin-top: 25%;
+       
         
     }
- */
+
+
+
+.my_projects{
+    margin-left: 2%;
+    margin-right: 2%;
+    
+}
+
+.my_projects_heading{
+    
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
     /* <!-- MORE CAPSTONE PROJECT & MORE CAPSTONE PROJECT DIV START -->
  */
 .more_capstone_project_and_more_capstone_project_div{
