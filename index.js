@@ -28,3 +28,16 @@ hamMenu.addEventListener('click', ()=>{
     }
 });
 
+const contactBtn = document.querySelector('.btn_contact_me');
+
+contactBtn.addEventListener('click', ()=>{
+
+   let contactForm = document.querySelector('.contact_me_form_div');
+
+   if(contactForm.style.display === 'none') {
+       contactForm.style.display = 'flex';
+   } else {
+       contactForm.style.display = 'none';
+   }
+
+});
