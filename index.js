@@ -30,18 +30,35 @@ hamMenu.addEventListener('click', ()=>{
 
 
 
-//Displaying contact form on click of contact me button
+    //Displaying contact form on click of contact me button
 
-const contactBtn = document.querySelector('.btn_contact_me');
+    const contactBtn = document.querySelector('.btn_contact_me');
 
-contactBtn.addEventListener('click', ()=>{
+    contactBtn.addEventListener('click', ()=>{
 
-   let contactForm = document.querySelector('.contact_me_form_div');
+    const contactForm = document.querySelector('.contact_me_form_div');
+   const currentDisplay = window.getComputedStyle(contactForm).display;
 
-   if(contactForm.style.display === 'none') {
-       contactForm.style.display = 'flex';
-   } else {
-       contactForm.style.display = 'none';
-   }
+    if(currentDisplay === 'none') {
+        contactForm.style.display = 'flex';
+    } 
+    else {
+        console.log('Contact form is already displayed');
+    }
+    });
 
-});
+    /* Undisplaying contact form on cancel */
+
+    const resetBtn  = document.querySelector('.contacts_reset');
+
+        resetBtn.addEventListener('click', ()=>{
+            const contactForm = document.querySelector('.contact_me_form_div');
+   const currentDisplay = window.getComputedStyle(contactForm).display;
+
+            if(currentDisplay=== 'flex') {
+                contactForm.style.display = 'none';
+            }
+            else {
+                console.log('Contact form is already hidden');
+            }
+        });
