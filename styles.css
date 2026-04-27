@@ -275,7 +275,7 @@ body{
 /* STYLING MAIN CONTENT */
 
 .main_content{
-    margin-top: 40px;
+    margin-top: 0.4px;
    /*  background-color: #ececf3; */
     gap: 20px;
 }
