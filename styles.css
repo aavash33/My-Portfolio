@@ -129,20 +129,31 @@ body{
 /* Styling headers */
 
 
-.header1{
-    background-color: #F5F6F8;
+/* @keyframes slide-in {
+  from {
+    transform:  rotate(0deg);
+  }
 
-    display: flex;
-   flex-direction: column;
-    align-items: center;
-    gap: 5px;
+  to {
+    transform:  rotate(-10deg);
+  }
+} */
+
+.header1 {
+  background-color: #F5F6F8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
 }
+
 
 .header1 h1{
     font-size: 48px;
     font-weight: 700;
    color: #0F172A;
     margin: 25px ;
+  /* animation: slide-in 2s ease-in-out 2 alternate; */
 }
 
 .header1 h2, h4{
@@ -489,7 +500,7 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03), 0 -2px 4px rgba(0, 0, 0, 0.03);
 
 .skills_cmnt p{
         color: #475569;
-
+        margin-top: 4px;
 }
 
 .skills_cmnt h3{
