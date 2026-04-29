@@ -62,3 +62,20 @@ hamMenu.addEventListener('click', ()=>{
                 console.log('Contact form is already hidden');
             }
         });
+
+        /* JS for receiving email messages */
+
+       document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector('.contact_me_form');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_eyusu8c', 'template_9dw511c', this)
+      .then(() => {
+        alert('Message sent!');
+        form.reset();
+      })
+      .catch(err => console.error(err));
+  });
+});
