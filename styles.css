@@ -12,7 +12,7 @@ body{
 
 .main_nav{
    display: block;
-   background-color:  #F5F7FA;
+   background-color:  #FFFFFF;
 }
 
 
@@ -51,21 +51,23 @@ body{
 }
 
 
-.off-screen-menus{
-    background-color: #F5F6F8;
-    height: 100vh;
+.off-screen-menus {
+    background-color: #FFFFFF;
+    height: 30vh;
     width: 100%;
-    max-width: 100%;
     position: fixed;
-    text-align: center;
-    top: 0;
+    top: 0px;
+    left: -100%;
+    z-index: 999;
+    transition: 0.3s ease;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
-    align-items:center;
+
+    justify-content: center;  /* vertical centering */
+    align-items: center;      /* horizontal centering */
+
     font-size: 1.5rem;
-    max-height: 250px;
-    transition: .3s ease;
-    left: -100%;
 }
 
 .off-screen-menus.active{
@@ -79,23 +81,41 @@ body{
 }
 
 
-
-.off-screen-menus li{
+.off-screen-menus ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    list-style: none;
+    padding: 0;
     margin-top: 20px;
 }
 
+.ham-nav{
+    display: none;
+    background-color: #FFFFFF;
+     position: fixed;
+      top: 0;
+    left: 0;
+    width: 100%;
+    height: 32px;
+    z-index: 1000;
+    border: 3px solid #F5F7FA;
 
-
+}
 
 .ham-menu{
     background-color: #F5F7FA;
     height: 30px;
     width: 30px;
-    margin-left:auto;
-    position: absolute;
-  
-    justify-content: flex-end;
+   display: none;
+    position: relative;
+   
+    display: flex;
+    
 }
+
+
 
 
 .ham-menu span{
@@ -108,6 +128,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     transition: .3s ease;
+  
 }
 
 
@@ -121,9 +142,9 @@ body{
 }
 
 
-.ham-menu,
-.off-screen-menus{
-    display: none;
+
+.off-screen-menus.active {
+    left: 0;
 }
 
 /* Styling headers */
@@ -140,7 +161,7 @@ body{
 } */
 
 .header1 {
-  background-color: #F5F6F8;
+  background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -164,7 +185,7 @@ body{
 /* buttons on head */
 .header_buttons{
     gap: 20px;
-    background-color: #F5F6F8;
+    background-color: #FFFFFF;
     flex-direction: row;
     display: flex;
     justify-content: center;
@@ -206,16 +227,21 @@ body{
     flex-direction: column;
      align-items: center;
      display: none;
+    
 }
 
 .contact_me_form{
-     background-color: #ffffff;
+     background-color: #232946;
     display: flex;
     flex-direction: column;
    
  padding: 10px;
     border : 2px solid white;
     border-radius: 10px;
+}
+
+.contact_me_form h1{
+    color: #FFFFFF;
 }
 
 .contacts_name,
@@ -244,23 +270,24 @@ body{
     margin-bottom: 10px;
 }
 .contacts_submit{
-    background-color: #0d6efd;
-    color: #ffffff;
+    background-color: #FFFFFF;
+    color: bl;
      padding: 10px;
-     border: 2px solid #0d6efd;
+     border: 2px solid ;
      border-radius: 12px;
 }
 
 .contacts_submit:hover{
     background-color: #0069d9;
     border-color: #0062cc;
+    color: #fff;
 }
 
 .contacts_reset{
-    background-color: #dc3545;
-    color: #ffffff;
+    background-color: #FFFFFF;
+    color: black;
     padding: 10px;
-     border: 2px solid #dc3545;
+     border: 2px solid ;
      border-radius: 12px;
 }
 .contacts_reset:hover{
@@ -278,15 +305,20 @@ body{
 
 /* MAIN HEADER  */
 .main_header{
-    background-color: #F5F6F8; 
+    background-color: #ffffff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02), 0 -2px 4px rgba(0, 0, 0, 0.02);
+    border-radius: 12px;
+    border: 2px solid #ffffff;
     padding-bottom: 40px;
+    margin: 1%;
+    margin-top: 20px;
 }
 
 
 /* STYLING MAIN CONTENT */
 
 .main_content{
-    margin-top: 0.4px;
+    margin-top: 60px;
    /*  background-color: #ececf3; */
     gap: 20px;
 }
@@ -712,6 +744,7 @@ width: 50%;
 
 
 
+
 @media (max-width:710px){
 
 
@@ -725,14 +758,26 @@ width: 50%;
    display: none;
 }
 
+.ham-nav{
+    display: block;
+}
+
 .ham-menu,
 .off-screen-menus{
     display: block;
-  
+
 
 }
 
 
+
+/* STYLING MAIN HEADER */
+
+.main_header{
+    margin: 2%;
+    margin-top: 40px;
+    
+}
 
 
 /* END OF NAV DIV */
@@ -845,3 +890,17 @@ margin: 2%;
 }
 
 }
+
+@media (min-width: 711px){
+   .ham-nav{
+    display: none;
+   }
+   
+   .ham-menu,
+   .off-screen-menus{
+    display: none;
+   }
+}
+
+
+

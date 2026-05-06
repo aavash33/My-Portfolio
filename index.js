@@ -13,20 +13,43 @@ view_project_button.addEventListener("click", view_project_button_func);
 
 const hamMenu = document.querySelector('.ham-menu');
 const offScreenMenus = document.querySelector('.off-screen-menus');
+const hamnavDiv = document.querySelector('.ham-nav');
 
-hamMenu.addEventListener('click', ()=>{
+function handleDesktopView() {
+    if (window.innerWidth >= 711) {
+        hamnavDiv.style.width = '0%';
+    }
+}
+
+function handleMobileView() {
+    if (window.innerWidth <= 710) {
+        hamnavDiv.style.display = 'block';
+        hamnavDiv.style.width = '100%';
+    }
+}
+
+// run on resize
+window.addEventListener('resize', () => {
+    handleDesktopView();
+    handleMobileView();
+});
+
+hamMenu.addEventListener('click', () => {
     hamMenu.classList.toggle('active');
     offScreenMenus.classList.toggle('active');
 
-
-    //Change of hamMenu position based on active status
-
-     if(hamMenu.classList.contains('active')) {
-        hamMenu.style.position = 'fixed';
+    if (hamMenu.classList.contains('active')) {
+        hamnavDiv.style.display = 'inline-block';
+        hamnavDiv.style.width = '20%';
     } else {
-        hamMenu.style.position = 'absolute';
+        hamnavDiv.style.display = 'block';
+        hamnavDiv.style.width = '100%';
     }
+
+    handleDesktopView();
+    handleMobileView();
 });
+
 
 
 
