@@ -54,37 +54,61 @@ hamMenu.addEventListener('click', () => {
 
 
     //Displaying contact form on click of contact me button
+const contactBtn = document.querySelector(".btn_contact_me");
 
-    const contactBtn = document.querySelector('.btn_contact_me');
+contactBtn.addEventListener("click", () => {
 
-    contactBtn.addEventListener('click', ()=>{
+    const wrapper = document.querySelector(".contact_me_form_div");
+    const currentDisplay = window.getComputedStyle(wrapper).display;
 
-    const contactForm = document.querySelector('.contact_me_form_div');
-   const currentDisplay = window.getComputedStyle(contactForm).display;
+    if (currentDisplay === "none") {
 
-    if(currentDisplay === 'none') {
-        contactForm.style.display = 'flex';
-    } 
-    else {
-        console.log('Contact form is already displayed');
+        wrapper.style.display = "flex";
+
+        const form = document.querySelector(".contact_me_form");
+
+        // Start in the closed state
+        form.classList.add("closing");
+
+        // Animate to the open state
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                form.classList.remove("closing");
+            });
+        });
+
+    } else {
+        console.log("Contact form is already displayed");
     }
-    });
+
+});
 
     /* Undisplaying contact form on cancel */
+const resetBtn = document.querySelector(".contacts_reset");
 
-    const resetBtn  = document.querySelector('.contacts_reset');
+resetBtn.addEventListener("click", () => {
 
-        resetBtn.addEventListener('click', ()=>{
-            const contactForm = document.querySelector('.contact_me_form_div');
-   const currentDisplay = window.getComputedStyle(contactForm).display;
+    const wrapper = document.querySelector(".contact_me_form_div");
+    const form = document.querySelector(".contact_me_form");
 
-            if(currentDisplay=== 'flex') {
-                contactForm.style.display = 'none';
-            }
-            else {
-                console.log('Contact form is already hidden');
-            }
-        });
+    const currentDisplay = window.getComputedStyle(wrapper).display;
+
+    if (currentDisplay === "flex") {
+
+        // Play closing animation
+        form.classList.add("closing");
+
+        // Hide after animation completes
+       setTimeout(() => {
+    wrapper.style.display = "none";
+    // form.classList.remove("closing"); <-- Remove this line
+}, 600);
+
+    } else {
+        console.log("Contact form is already hidden");
+    }
+
+});
 
         /* JS for receiving email messages */
 
