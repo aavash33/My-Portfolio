@@ -165,7 +165,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
+  
 }
 
 
@@ -175,11 +175,18 @@ body{
    color: #0F172A;
     margin: 25px ;
   /* animation: slide-in 2s ease-in-out 2 alternate; */
+  margin-bottom: 2px;
+}
+
+.header1 h2{
+    margin-bottom: 2px;
 }
 
 .header1 h2, h4{
      color: #0F172A;
+     
 }
+
 
 
 /* buttons on head */
@@ -802,6 +809,33 @@ width: 50%;
 /* END OF NAV DIV */
 
 
+/* Header */
+
+.header1 h2{
+    margin-bottom: 14px;
+}
+
+.header1 h2, h4{
+    overflow: auto;
+    
+   overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+  flex-shrink: 0;
+  width: 100%;
+  margin-left: 4px;
+  text-align: center;
+}
+
+.header1 h1{
+    text-align: center;
+}
+
+
+
+
+
+/* HEADER END */
 
 
     .my_projects{
